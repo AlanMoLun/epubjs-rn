@@ -22,7 +22,8 @@ const URL = require("epubjs/libs/url/url-polyfill.js");
 
 const EPUBJS = readFileSync(__dirname + "/../node_modules/epubjs/dist/epub.min.js", "utf8");
 const BRIDGE = readFileSync(__dirname + "/../contents/bridge.js", "utf8");
-
+console.log("bridge", __dirname + "/../contents/bridge.js");
+console.log("baseUrl", this.props.url);
 const EMBEDDED_HTML = `
 <!DOCTYPE html>
 <html>
